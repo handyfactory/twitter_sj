@@ -1,0 +1,11 @@
+<h1>모든 유저의 수: <%=@total%>명</h1>
+<%@users.each do |u|%>
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">가입내용</div>
+      <div class="card-body">
+        <h5 class="card-title"><%=u.email%></h5>
+        <h5 class="card-title"><%=u.nickname%></h5>
+        <p class="card-text"><%=u.password%></p>
+      </div>
+    </div>
+<%end%>
